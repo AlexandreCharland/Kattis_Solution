@@ -1,1 +1,0 @@
-for i in" "*int(input()):a,b=map(int, input().split());e=pow(a,(b-1)//2,b);print(["yes","no"][(e==b-1)*(a%b!=0)])
