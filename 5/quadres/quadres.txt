@@ -1,0 +1,2 @@
+I have implemented Euler's criterion.
+It is important to use the O(log(n)) power algorithm and to do mod p to limit the size of the numbers we are multiplying

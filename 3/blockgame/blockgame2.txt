@@ -1,0 +1,8 @@
+Let a,b natural such that a>b
+If a%b==0 then the player that moves first will of course win.
+If a%b!=0 then we can write a = k*b+r where k is a natural number and 0<r<b
+If k>=2 then
+If the position r,b leads to a winning position then removing k*b will make player 1 win
+If the position r,b leads to a losing position then (k-1)*b will force player 2 into the position b+r,b. The only move will be to remove 1 b from the stack. Hence he will generate the position r,b but this time player 1 will come out on top. Hence if k>=2 => player 1 can't lose if he has a winning position.
+The only case left is if a=b+r
+in that case there is only one move to consider.

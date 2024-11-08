@@ -1,0 +1,4 @@
+I have simply change the coordinate sytem such that the mouvement of the rook are (k,k) or (k,0) or (0,k) for an interger K
+I have also coded a function that determine what point are in bounds.
+Then it was really easy to generate every possible square where the rook could possibly go in one move.
+And with this list it was even easier to determine whether it could reach the target square or not.

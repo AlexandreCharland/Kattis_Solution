@@ -1,0 +1,1 @@
+I have simply implemented the Extended Euclide algorithm

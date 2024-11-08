@@ -1,0 +1,4 @@
+The idea is very simple
+Every substring that could be repeated to obtain the original one, the lenght of the substring must divide the lenght of the original one.
+Hence I start by finding the divisor of the original word to limit the possible tries.
+I use the fact that if gcd(a,b)=1 and the substring of lenght a,b both are repeated to recreate the original word, the the substring of length ab also work. Since I have already factorise the original length it is an easy optimisation to implement.
