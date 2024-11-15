@@ -1,0 +1,2 @@
+This problem is by the Chinese remainder theorem
+Since the max values of n is very small (n<=20) I precalculated the tricky value and store them in an array.
