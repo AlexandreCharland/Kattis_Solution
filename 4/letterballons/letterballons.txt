@@ -1,0 +1,2 @@
+The algorithm is a simple backtracking algorithm with an added stop condition.
+If is this impossible to beat the best score found with our current path chosen we backtract sooner. There is no need to continue the search.
