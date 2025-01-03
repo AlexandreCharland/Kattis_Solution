@@ -1,0 +1,16 @@
+n=int(input())
+m=int(input())
+c=0
+while(n>=2*m-1):
+    r=n%m
+    if(r!=0):
+        n-=r
+        c+=1
+        if(n<2*m-1):
+            break
+    n//=m
+    c+=1
+if(n<m):
+    print(c+1)
+else:
+    print(c+2)
