@@ -1,0 +1,19 @@
+The idea is to parcour the ring from all four directions.
+For exemple
+TT.T
+TTTT
+.T.T
+The first parcour (->) will be
+1 2 0 1
+1 2 3 4
+0 1 0 1
+The number represent the "streak" from the (->) direction.
+The second parcour keep the mimimum between the current value and the streak from the (<-) direction.
+1 1 0 1
+1 2 2 1
+0 1 0 1
+The third parcour is the same, min between the current value and the streak (V).
+1 1 0 1
+1 2 1 1
+0 1 0 1
+Same idea for the fourth parcour, you also need to keep in mind the best value found for the correct spacing.
