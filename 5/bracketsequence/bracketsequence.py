@@ -1,0 +1,22 @@
+input()
+a=[]
+b=0
+c=0
+for i in input().split():
+    if(i=="("):
+        a+=[c]
+        b=1-b
+        c=b
+    elif(i==")"):
+        b=1-b
+        if(b):
+            c=(c*a.pop())%1000000007
+        else:
+            c+=a.pop()
+    else:
+        j=int(i)
+        if(b):
+            c=(c*j)%1000000007
+        else:
+            c+=j
+print(c%1000000007)

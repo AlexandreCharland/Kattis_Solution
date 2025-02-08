@@ -1,0 +1,4 @@
+This is the maxmin algorithm.
+It is exponential
+Hence whitin the function I need the lowest constant
+So I precompute each possible movement.

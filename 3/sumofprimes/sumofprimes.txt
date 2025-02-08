@@ -1,0 +1,2 @@
+I use the Sieve of Eratosthenes to compute the prime.
+Made a version that is twice as fast, by skipping the even term.

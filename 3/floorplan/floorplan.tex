@@ -1,0 +1,26 @@
+\documentclass{article}
+
+\title{Floor Plan}
+\author{Alexandre Charland}
+\date{\today}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+\maketitle
+
+\section{Explanation}
+It is well known that
+\[ \sum_{i=1}^{n} i = \frac{n^{2}+n}{2} \]
+But from it we can derive
+\[ \sum_{i=1}^{n} i = \frac{n^{2}+n}{2} \iff 2 \cdot \sum_{i=1}^{n} i = n^{2} +n \iff 2 \cdot \sum_{i=1}^{n} i - n= n^{2} \]
+\[ \iff 2 \cdot \sum_{i=1}^{n} i - \sum_{i=1}^n 1 = n^{2} \iff \sum_{i=1}^n 2i-1 = n^2 \]
+Hence the sum of the n first odds numbers is $n^2$.\\
+We need to find what numbers can be written has the difference of two squares. Let $m , k \in \mathbb{N}$ such that $m>k$.
+\[ m^2 - k^2 = \sum_{i=1}^m 2i-1 - \sum_{i=1}^k 2i-1 = \sum_{i=k+1}^m 2i-1 \]
+The problem can be simplify has, find two odds numbers, such that the sum of the consecutive odds numbers between the two is n.\\
+Trivially, every odd number can be written as a sum of odds numbers.\\
+The last piece of the puzzle is to notice that the sum of two consecutive odds numbers is always a multiple of 4.\\
+Hence if a number is congruent to 2 mod 4, it can't be written has difference of squares.\\
+To find m and k use the second equality and go backward.
+\end{document}
