@@ -1,0 +1,45 @@
+a,b=map(int,input().split())
+if(b==1):
+    print(7)
+elif(b==2):
+    t=input().split()
+    if(t[0]>t[1]):
+        print("Bigger")
+    elif(t[0]==t[1]):
+        print("Equal")
+    else:
+        print("Smaller")
+elif(b==3):
+    t=input().split()
+    print(sorted([int(t[0]),int(t[1]),int(t[2])])[1])
+elif(b==4):
+    print(sum(list(map(int,input().split()))))
+elif(b==5):
+    s=0
+    for i in list(map(int,input().split())):
+        s+=i*((i+1)%2)
+    print(s)
+elif(b==6):
+    print("".join(chr(97+(int(i)%26))for i in input().split()))
+else:
+    t=list(map(int,input().split()))
+    l=len(t)
+    n=0
+    cur=0
+    s=2
+    while(n<l):
+        cur=t[cur]
+        if(cur>=l):
+            s=0
+            n=l
+        elif(cur==l-1):
+            s=1
+            n=l
+        else:
+            n+=1
+    if(s==0):
+        print("Out")
+    elif(s==1):
+        print("Done")
+    else:
+        print("Cyclic")
