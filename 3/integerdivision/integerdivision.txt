@@ -1,6 +1,0 @@
-First separate each number into their own classes.
-Then we need to calculate, for each classes, how many ways to pick two different elements.
-This is equivalent to calculate n!/(2*((n-2)!)), where n is the number of element in the class.
-n! and (n-2)! can get quite big.
-But it simplify itself to this simple formula n*(n-1)/2
-Note that if the class is empty n=0 => 0*(-1)/2=0 and if n=1 => 1*(1-1)/2=0

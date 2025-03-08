@@ -1,0 +1,11 @@
+a,b=map(int,input().split())
+t=sorted(list(map(int,input().split())))
+n=0
+i=0
+j=len(t)-1
+while(i<=j):
+    if(t[i]+t[j]<=b):
+        i+=1
+    n+=1
+    j-=1
+print(n)

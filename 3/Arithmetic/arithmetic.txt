@@ -1,2 +1,0 @@
-Very simple idea, transform everything into binary and put it back into base16.
-Then do not forget to remove the numbers that starts with 0 except for 0.

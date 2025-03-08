@@ -1,5 +1,0 @@
-Idea
-For every numbers you will try to place all of the number that you haven't yet place and that are smaller than it.
-I have an array (s) that keeps track of what number I haven't place yet.
-I also have an furthest tracker (f). This indicate that every number before the tracker has being place it has being.
-s and f makes it very easy to know what number I need to place and how far back I need to check.
