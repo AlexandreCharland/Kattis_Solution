@@ -1,4 +1,0 @@
-The variable a is all of the multiple of 3 <= n
-b is all of the multiple of 5 <= n
-Since a and b both count multiple of 15 twice we need to remove them
-Then the linearity of the sum explain the formula in the print
