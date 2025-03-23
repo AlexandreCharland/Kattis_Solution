@@ -1,0 +1,26 @@
+n=int(input())+1
+m=n>>1
+l=0
+while(m!=1):
+    m>>=1
+    l+=1
+m=n-(1<<(l+1))
+o=1
+if(m>=(1<<l)):
+    m-=(1<<l)
+    o=0
+a=[0]*l
+i=0
+while(m!=0):
+    a[i]=m%2
+    i+=1
+    m>>=1
+t=[1]+a[::-1]+a[o:]+[1]
+m=0
+for i in t:
+    m<<=1
+    m+=i
+if(n==2):
+    print(1)
+else:
+    print(m)
